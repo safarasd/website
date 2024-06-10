@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CPU</title>
+  <link rel="stylesheet" href="/css/style2.css">
+</head>
+<body>
+  <div class="title">
+    CPU or in other words Central Processing Unit
+  </div>
+  <div class="description" id="dec-one">
+    <div class="text" id="text-1">
+      <h1>How does it work?</h1>
+    <h3>At its core, the CPU (Central Processing Unit) functions as the brain of a computer, <br>responsible for executing instructions and performing calculations.<br> Here's a more detailed breakdown of how it accomplishes these tasks:</h2>
+    <h2>Fetch:</h2>
+    <h3> In the fetch cycle, the CPU retrieves the instruction from memory. The instruction is typically stored at the address specified by the program counter (PC). The PC is then incremented to point to the next instruction in memory.</h3>
+    <h2>Decode:</h2>
+    <h3>In the decode cycle, the CPU interprets the instruction and determines what operation needs to be performed. This involves identifying the opcode and any operands that are needed to execute the instruction.</h3>
+    <h2>Execute:</h2>
+    <h3>In the execute cycle, the CPU performs the operation specified by the instruction. This may involve reading or writing data from or to memory, performing arithmetic or logic operations on data, or manipulating the control flow of the program.</h3>
+    <h1>There are also some additional steps that may be performed during the instruction cycle, depending on the CPU architecture and instruction set:</h1>
+    <h2>Fetch operands: </h2>
+    <h3>In some CPUs, the operands needed for an instruction are fetched during a separate cycle before the execute cycle. This is called the fetch operands cycle.</h3>
+    <h2>Store results:</h2>
+    <h3>In some CPUs, the results of an instruction are stored during a separate cycle after the execute cycle. This is called the store results cycle.</h3>
+    <h2>Interrupt handling:</h2>
+    <h3>In some CPUs, interrupt handling may occur during any cycle of the instruction cycle. An interrupt is a signal that the CPU receives from an external device or software that requires immediate attention. When an interrupt occurs, the CPU suspends the current instruction and executes an interrupt handler to service the interrupt.</h3>
+    <h2>These cycles are the basic building blocks of the CPU’s operation and are performed for every instruction executed by the CPU. By optimizing these cycles, CPU designers can improve the performance and efficiency of the CPU, allowing it to execute instructions faster and more efficiently.</h2>
+
+    </div>
+    <div class="text" id="text-2">
+      <h2>The instruction cycle</h2>
+      <h3>Each phase of Instruction Cycle can be decomposed into a sequence of elementary micro-operations. In the above examples, there is one sequence each for the Fetch, Indirect, Execute and Interrupt Cycles. </h3>
+      <img class="image" id="img-1" src="/pictures/Screenshot-from-2018-03-29-00-57-59.png" alt="">
+      <h3>The Indirect Cycle is always followed by the Execute Cycle. The Interrupt Cycle is always followed by the Fetch Cycle. For both fetch and execute cycles, the next cycle depends on the state of the system. </h3>
+      <img class="image" id="img-2" src="/pictures/Screenshot-from-2018-03-29-09-49-05.png" alt="">
+      <h3>We assumed a new 2-bit register called Instruction Cycle Code (ICC). The ICC designates the state of processor in terms of which portion of the cycle it is in:- 
+        <br>
+        <br>00 : Fetch Cycle 
+        <br>01 : Indirect Cycle 
+        <br>10 : Execute Cycle 
+        <br>11 : Interrupt Cycle 
+        <br>
+        <br>At the end of the each cycles, the ICC is set appropriately. The above flowchart of Instruction Cycle describes the complete sequence of micro-operations, depending only on the instruction sequence and the interrupt pattern(this is a simplified example). The operation of the processor is described as the performance of a sequence of micro-operation. </h3>
+      <h2>The Fetch Cycle:</h2>
+      <h3>At the beginning of the fetch cycle, the address of the next instruction to be executed is in the Program Counter(PC). </h3>
+      <img class="image" id="img-3" src="/pictures/Screenshot-from-2018-03-27-23-37-15.png" alt="">
+    </div>
+  </div>
+</body>
+</html>

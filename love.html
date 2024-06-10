@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Slider with Stylish Buttons and Dots</title>
+    <link rel="stylesheet" href="/css/style1.css" />
+  </head>
+  <body>
+    <div class="title">
+      <h1>
+        Hello my pretty little princess. This is my apology and I'm going to try
+        to update the website daily or at least weekly
+      </h1>
+    </div>
+    <div class="text">
+      <p>
+        Okay madame below you have a couple of different options depending on
+        what you wanna learn today.
+      </p>
+    </div>
+    <div class="gif">
+      <img class="gif-image" src="/pictures/kiss-i-love-you.gif" alt="" />
+    </div>
+
+    <div class="slider-home">
+      <div class="slider-container">
+        <input type="radio" name="slider" id="slide1" checked />
+        <input type="radio" name="slider" id="slide2" />
+        <input type="radio" name="slider" id="slide3" />
+        <input type="radio" name="slider" id="slide4" />
+        <input type="radio" name="slider" id="slide5" />
+
+        <div class="slides">
+          <a class="slide" id="slide-1" href="CPU.html">
+            <button></button>
+            <h2>Central Processing Unit (CPU)</h2>
+          </a>
+
+          <div class="slide" id="slide-2">
+            <h2>Slide 2</h2>
+            <p>Content for Slide 2.</p>
+          </div>
+          <div class="slide" id="slide-3">
+            <h2>Slide 3</h2>
+            <p>Content for Slide 3.</p>
+          </div>
+          <div class="slide" id="slide-4">
+            <h2>Slide 4</h2>
+            <p>Content for Slide 4.</p>
+          </div>
+          <div class="slide" id="slide-5">
+            <h2>Slide 5</h2>
+            <p>Content for Slide 5.</p>
+          </div>
+        </div>
+
+        <div class="navigation-arrows">
+          <button class="arrow prev" onclick="prevSlide()">&#10094;</button>
+          <button class="arrow next" onclick="nextSlide()">&#10095;</button>
+        </div>
+
+        <div class="navigation-dots">
+          <label for="slide1" class="nav-dot"></label>
+          <label for="slide2" class="nav-dot"></label>
+          <label for="slide3" class="nav-dot"></label>
+          <label for="slide4" class="nav-dot"></label>
+          <label for="slide5" class="nav-dot"></label>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function prevSlide() {
+        if (document.getElementById("slide1").checked) {
+          document.getElementById("slide5").checked = true;
+        } else if (document.getElementById("slide2").checked) {
+          document.getElementById("slide1").checked = true;
+        } else if (document.getElementById("slide3").checked) {
+          document.getElementById("slide2").checked = true;
+        } else if (document.getElementById("slide4").checked) {
+          document.getElementById("slide3").checked = true;
+        } else if (document.getElementById("slide5").checked) {
+          document.getElementById("slide4").checked = true;
+        }
+      }
+
+      function nextSlide() {
+        if (document.getElementById("slide1").checked) {
+          document.getElementById("slide2").checked = true;
+        } else if (document.getElementById("slide2").checked) {
+          document.getElementById("slide3").checked = true;
+        } else if (document.getElementById("slide3").checked) {
+          document.getElementById("slide4").checked = true;
+        } else if (document.getElementById("slide4").checked) {
+          document.getElementById("slide5").checked = true;
+        } else if (document.getElementById("slide5").checked) {
+          document.getElementById("slide1").checked = true;
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+body{
+  background-image: url(/pictures/1920x1080-brilliant-rose-solid-color-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+.title{
+  color: rgb(7, 226, 255);
+  font-weight: bold;
+  font-size: 35px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+h1{
+  color: rgb(7, 226, 255);
+  margin-left: 20px;
+}
+h3{
+  color: white;
+  margin-left: 50px;
+}
+h2{
+  margin-left: 40px;
+  color: rgb(7, 226, 255);
+}
+::selection {
+  background-color: black;
+  color: yellow;
+}
+#dec-one{
+  display: flex;
+}
+#text-1{
+  width: 1000px;
+}
+#text-2{
+  display: flex;
+  flex-direction: column;
+}
+.image{
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
