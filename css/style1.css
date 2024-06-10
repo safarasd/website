@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: black;
-  background-image: url(website/pictures/pexels-felixmittermeier-956999.jpg);
+  background-image: url(/website/pictures/pexels-felixmittermeier-956999.jpg);
   display: flex;
   flex-direction: column;
   justify-content: center;
