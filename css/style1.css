@@ -2,7 +2,7 @@ body {
   height: 100vh;
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: purple;
+  background-image: url(pictures/pexels-felixmittermeier-956999.jpg);
   display: flex;
   flex-direction: column;
   justify-content: center;
